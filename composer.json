@@ -1,0 +1,38 @@
+{
+    "name": "tanchengjin/laravel-admin-captcha",
+    "description": "this is a captcha extension of laravel admin",
+    "type": "library",
+    "keywords": [
+        "laravel-admin",
+        "extension",
+        "laravel admin extension captcha"
+    ],
+    "homepage": "https://github.com/tanchengjin/laravel-admin-captcha",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TanChengjin",
+            "email": "18865477815@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "tanchengjin/captcha": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "tanchengjin\\LaravelAdmin\\Captcha\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tanchengjin\\LaravelAdmin\\Captcha\\CaptchaServiceProvider"
+            ]
+        }
+    }
+}
